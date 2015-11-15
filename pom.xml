@@ -8,7 +8,15 @@
     <packaging>war</packaging>
 
     <name>spbendResourse</name>
-
+      <build>
+    <plugins>
+      <plugin>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>0.5.6</version>
+      </plugin>
+    </plugins>
+  </build>
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
